@@ -1,0 +1,23 @@
+{
+  "name": "prover_system",
+  "version": "1.0.0",
+  "description": "Snarkjs prover system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "[snark",
+    "js",
+    "bellman",
+    "adatper]"
+  ],
+  "author": "Pratap Mridha",
+  "license": "MIT",
+  "dependencies": {
+    "@iden3/binfileutils": "0.0.11",
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.6.11"
+  }
+}
