@@ -21,6 +21,7 @@ const main = async () => {
         }
         , '../outputs/Factor_js/Factor.wasm', '../setup/Factor_0001.zkey');        // convert key to uncompressed format
     const { fd: fdZKey, sections: sectionsZKey } = await binFileUtils.readBinFile('../setup/Factor_0001.zkey', "zkey", 2, 1 << 25, 1 << 23);
+    console.log("Public Signals: ", anydata.publicSignals);
     const zkey = await utils.readHeader(fdZKey, sectionsZKey);
     const vkey = await getGroth16VK(zkey, fdZKey, sectionsZKey);
     fs.writeFileSync('vkey_uncompressed.json', JSON.stringify(vkey));
