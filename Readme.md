@@ -1,3 +1,9 @@
+## Introduction
+
+A demo implementation of groth16 using [SnarkJs (by Iden3)](
+https://github.com/iden3/snarkjs) for generating proof and [Bellman (by zkcrypto)](https://github.com/zkcrypto/bellman/) for verification. Our goal was to have rust based implementation for verification so that it can be deployed on blockchains which uses rust based smart contracts like Cosomwasam, Solana etc. 
+
+
 ## Steps to Run
 1. Clone the repository
 2. Run the following commands
